@@ -37,6 +37,9 @@ jobs:
       - name: Sync Capacitor
         run: npx cap sync android
 
+      - name: Konfigurasi Android TV (leanback, landscape, banner)
+        run: node scripts/android-tv-setup.js
+
       - name: Beri izin eksekusi gradlew
         run: chmod +x android/gradlew
 

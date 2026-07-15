@@ -39,6 +39,18 @@ git push -u origin main
 - Izinkan **"Install dari sumber tidak dikenal"** bila diminta.
 - Selesai — aplikasi akan membuka website secara langsung.
 
+## Dukungan Android TV
+Aplikasi ini sudah dikonfigurasi untuk **Android TV**:
+- Muncul di launcher TV (Leanback) dengan **banner**
+- Orientasi terkunci **landscape**
+- Bisa dipasang di TV tanpa touchscreen
+
+### Mengganti banner TV dengan milikmu
+Banner adalah gambar yang tampil di home screen Android TV.
+1. Siapkan gambar **PNG ukuran 320 x 180 piksel** (wajib ukuran ini).
+2. Timpa file `resources/banner.png` dengan gambarmu (nama file harus tetap `banner.png`).
+3. Push/upload ulang ke GitHub → APK baru otomatis dibangun dengan banner barumu.
+
 ## Catatan
 - Ini menghasilkan **APK debug** (untuk pemakaian pribadi/uji coba). Untuk
   distribusi ke Play Store, dibutuhkan APK/AAB yang **ditandatangani (signed)**.
@@ -51,5 +63,7 @@ git push -u origin main
 ├── capacitor.config.json      # Konfigurasi app (nama, URL tujuan)
 ├── package.json               # Dependensi Capacitor
 ├── www/index.html             # Layar loading saat app dibuka
+├── resources/banner.png       # Banner Android TV (320x180 px) - bisa diganti
+├── scripts/android-tv-setup.js  # Skrip konfigurasi Android TV
 └── .github/workflows/build-apk.yml   # Skrip build otomatis di cloud
 ```
