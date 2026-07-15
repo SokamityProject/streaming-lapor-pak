@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Streaming Lapor Pak</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      padding: 24px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .spinner {
+      width: 44px;
+      height: 44px;
+      border: 4px solid rgba(255, 255, 255, 0.15);
+      border-top-color: #3b82f6;
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+    }
+    .hint { font-size: 13px; opacity: 0.6; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">Streaming Lapor Pak</div>
+    <div class="spinner"></div>
+    <div class="hint">Memuat konten&hellip;</div>
+  </div>
+</body>
+</html>

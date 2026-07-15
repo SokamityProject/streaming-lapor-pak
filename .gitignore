@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Capacitor generated native project (dibuat ulang saat build)
+android/
+
+# Build output
+*.apk
+*.aab
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

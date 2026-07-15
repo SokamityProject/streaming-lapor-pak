@@ -1,0 +1,13 @@
+{
+  "appId": "my.to.laporpak.streaming",
+  "appName": "Streaming Lapor Pak",
+  "webDir": "www",
+  "server": {
+    "url": "https://tv.laporpak.my.to",
+    "cleartext": true,
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
